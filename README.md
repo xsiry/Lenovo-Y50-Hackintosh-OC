@@ -16,7 +16,7 @@ For the UHD model, the DVMT-prealloc BIOS setting must be changed to 128MB. One 
 
 Also, be aware that hibernation (suspend to disk or S4 sleep) is not supported on hackintosh.
 
-sudo pmset -a hibernatemode 0
-sudo rm /var/vm/sleepimage
-sudo mkdir /var/vm/sleepimage
+- sudo pmset -a hibernatemode 0
+- sudo rm /var/vm/sleepimage
+- sudo mkdir /var/vm/sleepimage
 
