@@ -1,5 +1,5 @@
 # Lenovo-Y50-Hackintosh-OC
-Y50-70 UHD/4K OpenCore5.6 10.15
+Y50-70 UHD/4K(1080P) OpenCore5.6 10.15
 
 BIOS settings
 
