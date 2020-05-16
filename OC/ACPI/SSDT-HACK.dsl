@@ -98,8 +98,8 @@ DefinitionBlock("", "SSDT", 2, "hack", "_HACK", 0)
 
     External(_SB.PCI0.LPCB.PS2K, DeviceObj)
     External(_SB.PCI0.LPCB.EC0, DeviceObj)
-    External(_SB.PCI0.LPCB.EC.XQ11, MethodObj)
-    External(_SB.PCI0.LPCB.EC.XQ12, MethodObj)
+    External(_SB.PCI0.LPCB.EC0.XQ11, MethodObj)
+    External(_SB.PCI0.LPCB.EC0.XQ12, MethodObj)
     External(TPDF, FieldUnitObj)
 
     Scope(_SB.PCI0.LPCB.EC0)
@@ -124,7 +124,7 @@ DefinitionBlock("", "SSDT", 2, "hack", "_HACK", 0)
                     Notify(\_SB.PCI0.LPCB.PS2K, 0x20)
                 }
             } Else {
-                     \_SB.PCI0.LPCB.EC.XQ11()
+                     \_SB.PCI0.LPCB.EC0.XQ11()
             }
         }
         //_Q12 called on brightness up key
@@ -144,7 +144,7 @@ DefinitionBlock("", "SSDT", 2, "hack", "_HACK", 0)
                     Notify(\_SB.PCI0.LPCB.PS2K, 0x10)
                 }
             } Else {
-                     \_SB.PCI0.LPCB.EC.XQ12()
+                     \_SB.PCI0.LPCB.EC0.XQ12()
             }
         }
     }
